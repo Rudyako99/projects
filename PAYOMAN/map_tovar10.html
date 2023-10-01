@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PAYOMAN</title>
+        <meta name="viewport" content="width=device-width, inital-scale=1,
+    shrink-to-fit=no ,minimal-ul">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'article-info',
+				buttonAddToBasket: 'btn',
+				productPrice: 'product__price-number',
+				productSize: 'product__size-element',
+				
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'basket',
+				countryCode: '+380',
+				smartBasketCurrency: 'грн',
+				smartBasketMinIconPath: 'icons/Basket (2).svg',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: '#',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
+    <body>
+        <header class="layout-header">
+            <a href="payoman.html" class="logo">
+                <img src="images/logo_payoman.png" alt="payoman">
+            </a>
+        </header>
+        <div class="layout-container">
+        <nav class="layout-nav">
+            <ul>
+                <li class="dropdown menu no-hover">
+                    <a href="#news">
+                        <img src="icons/menu.svg"></a>
+                    <div class="dropdown-wrapper">
+                        <ul class="dropdown-menu select">
+                            <li>
+                                <a href="#">Пайки</a>
+                                <img src="line/Vector 1.svg">
+                                <ul class="dropdown-menu option">
+                                  <li>
+                                    <a href="#">Вегетеріанські</a></li>
+                                  <li>
+                                    <a href="#">Туристичні</a></li>
+                                  <li>
+                                    <a href="#">Дитячі</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="select">
+                                <a href="#">Посуд і прибори</a>
+                                <img src="line/Vector 1.svg">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="icon home no-hover">
+                    <a href="payoman.html">
+                        <img src="icons/home.svg"></a>
+                </li>
+            
+                <li class="icon menu2">
+                    <a href="#">Збери свій пайок</a>  
+                </li>
+
+                <li>
+                    <a href="#openModal">Контакти</a>
+                    <div id="openModal" class="modal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title">Контакти</h3>
+                            <a href="#close" title="Close" class="close">×</a>
+                          </div>
+                          <div class="modal-body">    
+                            <p> Наші телефони:<br>
+                                (099) 044-40-87<br>
+                                (073) 044-40-87</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                </li>
+
+                <li>
+                    <a href="#openModal1">Доставка та  оплата</a>
+                    <div id="openModal1" class="modal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title">Доставка та  оплата</h3>
+                            <a href="#close" title="Close" class="close">×</a>
+                          </div>
+                          <div class="modal-body">    
+                            <p> Доставка:<br>
+                                <p>Відділення/Кур'єр Нова Пошта</p><img class="img" src="icons/нова пошта.png"><br>
+                                Відділення/Кур'єр Укрпошта <img class="imgs" src="icons/logo_pin_ukrpost.jpg"></p>
+                                <p> Оплата:<br>
+                                  <p>Наложений платіж Нова Пошта</p><img class="img" src="icons/нова пошта.png"><br>
+                                     Наложений платіж Укрпошта <img class="imgs" src="icons/logo_pin_ukrpost.jpg"><br>
+                                    </p>
+                                    <p>Онлайн оплата на картку за реквізитами </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>    
+                </li>
+
+                <li>
+                    <a href="#openModal2">Про нас </a>
+                    <div id="openModal2" class="modal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title">Про нас</h3>
+                            <a href="#close" title="Close" class="close">×</a>
+                          </div>
+                          <div class="modal-body">    
+                            <p> <h1>Про інтернет-магазин</h1>
+                              <h2>PAYOMAN</h2>
+                              
+                              - тільки якісні та оригінальні товари зі США та Європи;<br>
+                              
+                              - одяг, спорядження від відомих брендів;<br>
+                              
+                              - оригінальна продукція армії США;<br>
+                              
+                              - туристичне та бівачне спорядження.
+                              
+                              
+                              
+                              <h2>Переваги роботи з нами:</h2>
+                              
+                              - ексклюзивні товари;<br>
+                              
+                              - консультація та допомога у підборі товару;<br>
+                              
+                              - знижки на великі замовлення;<br>
+
+                              - 10% йдуть на потреби ЗСУ ;</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>        
+                </li>
+
+
+                <li>
+                    <a href="#">УКР/ENG</a>  
+                </li>
+
+                <li class="icon basket no-hover">
+                     
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <form class="form">
+        <input type="text" id="field-search" name="search" placeholder="Пошук" 
+        class="control">
+        <label for="field-search" class="label-search">
+            <img src="icons/search.svg"></label>
+            <a href="#" class="filter"><img src="icons/filter.svg"></a>
+    </form>
+
+    <div  class="article-grids">
+       <article class="wides">
+        <div class="article-infos">
+            
+            
+                <img src="images/muska.png">
+              
+    
+        </div> 
+
+        <div class="article-infos">
+            <h2 class="article-titles">
+                Миска “Похід”
+              <img src="line/Line 3.svg">
+            </h2>
+              <div class="price-action">
+                <p class="price">150 грн</p>
+                    <ul class="texts">
+                        Дана миска передбачає наступне:
+                        <li>Об'ємність. У ній комфортно їсти перше та  друге вітряну погоду.</li>
+                    
+                    <li>Зручний матеріал. Не дає попекти руки коли їсте гарячу страву.</li> 
+                    
+                    <li>Тепловіддача. Дає тепло та  комфорт під час холодної весняної дощової погоди.</li></ul>
+                <button class="btn" type="button" 
+                data-sb-id-or-vendor-code="331"
+  data-sb-product-name="Миска “Похід”"
+  data-sb-product-price="150"
+  data-sb-product-quantity="1"
+  data-sb-product-img="images/muska (1).png">До кошика</button>
+              </div>
+              <div class="field">
+                <label for="field-commet">Відгук</label>
+                <textarea id="field-commet" rows="4" class="control" 
+                placeholder="Тут можна написати ваш відгук"></textarea>
+            </div>
+        </div>
+
+       </article>
+          </div>
+    <footer><a href="#" class="fot">Зворотній зв’язок payoman144@gmail.com</a></footer>
+    </body>
+</html>
